@@ -1,6 +1,28 @@
 # Provisioning with Vagrant
 - sending in files
 
+## Given new project to create an Environments
+When given a new project, you want to ask a few questions to help you get going. 
+- Example:
+  - What language is it in?
+  - Is there a framework to install? (rails, flask, django, workpress)
+  - Any specific packages? If so, is there a list? (Gemfile, requirements.txt)
+  - Any tests?
+
+**Answers**
+- What language is it in?
+  - Code is in JS and others.
+  - There are some tests in ruby and rspec
+- Is there a framework to install?
+  - No, only the testing framework, rspec
+- Any specific packages?
+  - Yes, with the environment file, you have a Gemfile with dependencies
+- Any tests?
+  - Yes, 2 tests, have integration tests to run outside the machine:
+    - rake spec
+  - Also there might be some unit tests in JS inside
+
+
 ## gem and bundler VS pip and packages
 - gems are packages in ruby or dependencies
 - bundler is ruby's package manager
@@ -29,6 +51,7 @@
 - Run `rake spec`
 - Initially, most of the tests will fail, the rest of the lecture was fixing the code so that tests pass/task for us to do
 
+## Lecture objectives
 **Objectives**
 - Run lots of tests
 - Understood what they are testing
