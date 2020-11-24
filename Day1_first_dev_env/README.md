@@ -71,4 +71,4 @@ This repo is the first virtual environment to create dev envrionment
 - Nginx is a high performance load balancer used to deliver content to the web. 
 - After setting up a connection to vagrant box, -> `config.vm.network "private_network", ip: "192.168.50.4"` allows to connect it to a static ip
 - An IP address is not suitable for a URL, so we can change/alias the domain name firstly by downloading the following plugin -> `vagrant plugin install vagrant-hostsupdater`
-- Then can change the IP address to whatever we wish e.g. config.vm.hostname = "development.local"
+- Then can change the IP address to whatever we wish e.g. `config.vm.hostname = "development.local"`
