@@ -37,6 +37,7 @@ This repo is the first virtual environment to create dev envrionment
 - `vagrant destroy` - Stops the virtual machine and destroys resources 
 - `vagrant ssh` - This will access the machine over a network
 - `vagrant suspend`
+- `vagrant halt` - maintains its current state
 - `vagrant reload` - Once something is updated in vagrant file, reloads vb to update it and runs it 
 - `exit` to leave the machine in bash
 
