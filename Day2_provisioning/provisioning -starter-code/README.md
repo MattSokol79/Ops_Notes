@@ -19,7 +19,7 @@
 - After version 6.0 (not sure the actual version), comes pre loaded with NPM.
 
 ## Ubuntu package manager
-- apt-get (or just apt)
+- `apt-get` (or just `apt`)
 
 ## Installing test
 1. In bash, go to folder with Gemfile -> spec/
@@ -28,3 +28,13 @@
 **Running Tests**
 - Run `rake spec`
 - Initially, most of the tests will fail, the rest of the lecture was fixing the code so that tests pass/task for us to do
+
+**Objectives**
+- Run lots of tests
+- Understood what they are testing
+- Solved all of the failing tests
+
+**Know how to:**
+- Provision your mahcine with:
+  - Code
+  - Instructions
