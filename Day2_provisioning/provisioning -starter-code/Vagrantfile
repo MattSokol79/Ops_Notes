@@ -12,5 +12,9 @@ Vagrant.configure("2") do |config|
   # Sync the app folder
   # config.vm.synced_folder "path/origin/folder", "path/to/destination/folder"
   config.vm.synced_folder "app", "/app"
-  
+
+  # Run the provision script we created in envrionment folder
+  # The script contains bash commands to install things like nginx
+  config.vm.provision "shell", path: "environment/provision.sh"
+
 end
