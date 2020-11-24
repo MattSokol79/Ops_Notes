@@ -11,9 +11,15 @@ This repo is the first virtual environment to create dev envrionment
 - An environment is where code runs (NOT GitHub)
 - Can be designed for different purposes: Development, Production, Testing etc.
 - Virtual environments are a useful tool to keep dependencies required by different projects separate and consistent by creating isolated virtual machine/environments for them. (Avoids the issue of *it works on my computer*)
+**What are the different env?**
+1. Dev environments
+2. Testing environments
+3. Deployment/Live environments
+
+- Code will move between these
   
 ## Vagrant
-- Open source Linux distribution
+- Open source Linux distribution that creates environments
   - Written in Ruby
 - Vagrant boxes - pre loaded vagrant files that create virtual machines.Usually just an OS
   - Easiest way of adding a box is looking up from the catalog on the website.
