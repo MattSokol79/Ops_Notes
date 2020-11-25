@@ -120,3 +120,8 @@ When given a new project, you want to ask a few questions to help you get going.
 - Provision your mahcine with:
   - Code
   - Instructions
+
+## Notes of bash commands I ran
+```bash
+
+```
