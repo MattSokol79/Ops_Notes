@@ -47,8 +47,8 @@ export MY_VAR
 
 - This is still not permanent -> when you restart terminal, it will be lost.
 `printenv` shows variables
-`printenv grep "COOL"` -> Looks for the COOL variable which was set earlier
 `COOL_AMAZING=42`
+`printenv grep "COOL"` -> Looks for the COOL variable which was set earlier
 
 ## Checking your Variables
 - `printenv`
@@ -107,7 +107,7 @@ We covered:
   - `stdin` -> *standard input stream* provides input to commands.
 
 ***Two ways to redirect output to a file***
-- `n>` -> Redirects output from file descriptor n to a file
+- `n>` -> Redirects output from file descriptor n to a file OVERWRITES IT
 - `n>>` -> Does the same **BUT** output is appended to the existing file instead of overwriting it 
 
 ## Grep and ps aux using piping
