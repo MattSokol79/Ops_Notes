@@ -105,3 +105,36 @@ You can use these within `ls` with `grep` and other commands
 - Find the PID (process id) through grep and can kill that specific process
   - e.g. `ps -aux | grep vagrant` -> Find all processes of vagrant
   - `sudo kill <PID>` -> Kill a specific vagrant process with its pid provided
+
+
+## Bash Variables
+**Define Dynamically**
+`HELLO=THIS_AMAZING`
+
+**Call using `$`**
+`echo $HELLO`
+
+- These only live on the current terminal/process, if you exit terminal after defining a terminal, and open a new one, it will no longer be there.
+
+## Environment Variables
+- If you want a variable to exist everytime you open a terminal (global variable) --> You need to add it to the PATH!!
+
+- How to do that?
+  - It reads files and locations before opening. Where do I write this variable?
+  - ---> `.bashrc` or in `.profile` NOT IN BOTH
+  - Following DRY ----> make `.profile` look and read `.bashrc` and only write in `.bashrc` 
+
+
+
+## Bash PATH
+- A bunch of files it reads in some order.
+- Specific files that the terminal executes before opening and allowing you, the user, or another program to interact with it.
+- This is a great location to set some variables. These can them be used by child processes.
+- To be used by child process, it's useful to `export` the variable in the PATH. 
+
+
+## Alias - NOT V IMPORTANT 
+- Not going to be covered in lesson
+- Example of an alias in a `.bashrc`
+  - `alias cfb='vim ~/.bashrc'
+    - literally just stick a command in there after the word alias and then the shortcut= then the command
