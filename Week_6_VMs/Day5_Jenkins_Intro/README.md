@@ -34,3 +34,25 @@
 9. Build -> command -> execute shell -> cd/home/ubuntu app npm install npm test
 10. point github to ip -> go to repo -> settings -> webhook -> add webhook -> point to server -> <url in the payload url>/github-webhook/
 11. in terminal `echo 'test 1' >> README.md in repo` -> Git push should trigger jenkins to begin work  
+
+
+## Rundown of the week
+**what do they do?**
+package managers
+pip package managers
+upgrade
+update
+Devops/Waterfall info and why 
+
+jenkins (automation server) helps move code between environments i.e. Dev -> Test -> Deployment
+CI -> Dev -> Testing and loops back to make sure tests pass
+C delivery -> Code delivered to production like environment, but IS NOT in production, it can be at a switch of a button
+C Deployment -> Code goes live without human interaction -> As soon as its ready
+
+made webhook 
+1. original repo with the app with tests inside the app folder
+2. On jenkins -> add repo url to source code management -> jenkins knows where to look for it
+3. Generate SSH keys and provide jenkins and github with the keys to make sure they communicate -> jenkins ***listens*** to github THIS IS POINTING THE WEBHOOK you have to set it up on the github repo under *webhooks*
+4. Now they are connected and we can include the test commands in Build under command in jenkins
+5. Now everytime there is a change in the code (git add. git push), jenkins will get triggered, it will pull the code and run the tests ***AUTOMATICALLY***
+6. ESSENTIALLY Jenkins tests all the code that is pushed into the repo automatically 
