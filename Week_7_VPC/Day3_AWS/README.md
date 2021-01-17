@@ -117,3 +117,9 @@ It allows you to:
 ![](img/apprunning.PNG)
 
 
+# S3 Bucket - Simple Storage Service
+- Essentially a blank hard drive
+- Used as disaster recovery plans
+- Unlimited storage
+- Can create a bucket with only `Read` permissions
+
